@@ -124,6 +124,9 @@ const Exp1 = () => {
       });
       observer.unobserve(mainRef.current);
       lastObserver.unobserve(lastElement.current);
+      allElnts.forEach((elms) => {
+        textElObserver.unobserve(elms.current);
+      });
     };
   }, []);
   return (
