@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Exp1 from "./pages/exp1";
+import Exp2 from "./pages/exp2";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/exp1",
     element: <Exp1 />,
+  },
+  {
+    path: "/exp2",
+    element: <Exp2 />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

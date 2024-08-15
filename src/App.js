@@ -8,10 +8,16 @@ function App() {
       <div
         style={{
           padding: "30px",
+          display: "flex",
+          flexDirection: "column",
+          gap: "15px",
         }}
       >
         <h3>
-          1. <a href={"/exp1"}>Replicating Jetbrains product presentation</a>{" "}
+          1. <a href={"/exp1"}>replicating jetbrains product presentation</a>{" "}
+        </h3>
+        <h3>
+          2. <a href={"/exp2"}>scroll-based "introducing dashwave"</a>{" "}
         </h3>
       </div>
     </div>
