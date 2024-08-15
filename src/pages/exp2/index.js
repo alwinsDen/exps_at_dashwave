@@ -104,9 +104,9 @@ const Exp2 = () => {
     >
       <p
         style={{
-          fontSize: "2rem",
+          fontSize: "3.5rem",
           color: "#fff",
-          fontWeight: 600,
+          fontWeight: 400,
           top: "50vh",
           left: "50vw",
           width: "600px",
