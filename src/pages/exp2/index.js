@@ -68,9 +68,16 @@ const Exp2 = () => {
               }
             }
           }
-          window.addEventListener("scroll", blurControls);
+          function debouncer(func, waitTime) {
+            let timeVar;
+            return function (...args) {
+              clearInterval(timeVar);
+              timeVar = setInterval(func.apply(this, args), waitTime);
+            };
+          }
+          window.addEventListener("scroll", debouncer(blurControls, 20));
           return () => {
-            window.removeEventListener("scroll", blurControls);
+            window.addEventListener("scroll", debouncer(blurControls, 20));
           };
         }
       },
